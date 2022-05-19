@@ -9,6 +9,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_PRELINK_MODULE := false
 LOCAL_MODULE := libExynosOMX_Core
+LOCAL_VENDOR_MODULE := true
 
 LOCAL_CFLAGS := \
     -Wno-enum-conversion \
@@ -51,4 +52,3 @@ LOCAL_CFLAGS += -DEGL_IMAGE_SUPPORT
 endif
 
 include $(BUILD_SHARED_LIBRARY)
-
